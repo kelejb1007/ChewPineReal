@@ -4,261 +4,306 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kẹo Lá Dứa - Hương vị tự nhiên từ đất Việt</title>
+    <title>Chewpine Real - Kẹo Mềm Lá Dứa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <style>
-        .logo-image {
-            height: 50px;
-            width: auto;
-            margin-top: 5px;
-            margin-right: 18px;
-        }
 
-        .logo-title {
-            font-weight: bold;
-            font-size: 24px;
-            margin-left: 10px;
-            padding-bottom: 30px;
-        }
+    <link href="assets/css/header-footer.css" rel="stylesheet">
+    <link href="assets/css/home.css" rel="stylesheet">
+
+    <style>
     </style>
 </head>
 
 <body>
-    <header id="header">
-        <nav>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <!-- Logo Section -->
             <div class="logo">
-                <img src="assets/img/logo2.png" alt="ChewpineReal Logo" class="logo-image">
-                Kẹo Mềm Lá Dứa
+                <div class="logo-image">
+                    <!-- <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='70' font-size='60' fill='%23fff'%3E🍍%3C/text%3E%3C/svg%3E"
+                        alt="Chewpine Logo"> -->
+                    <img src="assets/img/logo-removebg.png" alt="Chewpine Logo">
+                </div>
+                <div class="logo-divider"></div>
+                <span class="logo-text">Chewpine Real</span>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#home">Trang chủ</a></li>
-                <li><a href="#about">Về chúng tôi</a></li>
-                <li><a href="#products">Sản phẩm</a></li>
-                <li><a href="#process">Quy trình</a></li>
-                <li><a href="#contact">Liên hệ</a></li>
-            </ul>
-        </nav>
+
+            <!-- Navigation Menu -->
+            <nav>
+                <ul>
+                    <li><a href="#home">Trang Chủ</a></li>
+                    <li><a href="#about">Về Chúng Tôi</a></li>
+                    <li><a href="#products">Sản Phẩm</a></li>
+                    <li><a href="#culture">Văn Hóa</a></li>
+                    <li><a href="#news">Tin Tức</a></li>
+                    <li><a href="#contact">Liên Hệ</a></li>
+                </ul>
+            </nav>
+
+            <!-- Right Icons -->
+            <div class="header-icons">
+                <button onclick="window.open('https://www.facebook.com/ChewPineReal', '_blank')" class="icon-btn"
+                    title="Giỏ hàng">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                    </svg>
+                </button>
+                <button class="icon-btn" title="Tài khoản">
+                    <i class="fas fa-user"></i>
+                </button>
+                <button class="icon-btn" title="Yêu thích">
+                    <i class="fas fa-heart"></i>
+                </button>
+            </div>
+        </div>
     </header>
 
-    <section id="home" class="hero">
-        <!-- Thêm ảnh banner của bạn ở đây: <img src="banner.jpg" class="hero-image" alt="Banner"> -->
-        <div class="hero-placeholder">
-            <div style="font-size: 60px; margin-bottom: 15px;"></div>
-            <p></p>
-            <!-- <small style="opacity: 0.7; margin-top: 10px;">&lt;img src="banner.jpg" class="hero-image"&gt;</small> -->
-        </div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Kẹo Mềm Lá Dứa<br>Mix Hạt Dinh Dưỡng</h1>
-                <p>Dòng kẹo handmade được làm từ nguyên liệu tự nhiên vùng Đồng bằng sông Cửu Long, hướng tới phân khúc
-                    khách hàng trẻ và gia đình muốn thưởng thức sản phẩm truyền thống nhưng an toàn và hiện đại.
-                </p>
+    <!-- Hero Slider -->
+    <!-- <section class="hero-slider">
+        <div class="slide active">
+            <div class="slide-content">
+                <div class="slide-text">
+                    <h1>Chewpine Real<br>Kẹo mềm lá dứa</h1>
+                    <p>Dòng kẹo handmade được làm từ nguyên liệu tự nhiên vùng Đồng bằng sông Cửu Long, hướng tới phân
+                        khúc khách hàng trẻ và gia đình muốn thưởng thức sản phẩm truyền thống nhưng an toàn và hiện đại
+                    </p>
+                    <button class="cta-button">Tìm Hiểu Thêm</button>
+                </div>
+                <div class="slide-image">
+                    <div class="product-showcase">
+                        <div class="product-icon">🍬</div>
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <div class="slide">
+            <div class="slide-content">
+                <div class="slide-text">
+                    <h1>Mix hạt<br>Dinh dưỡng</h1>
+                    <p></p>
+                    <button class="cta-button">Tìm Hiểu Thêm</button>
+                </div>
+                <div class="slide-image">
+                    <div class="product-showcase">
+                        <div class="product-icon">🌿</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="slide-content">
+                <div class="slide-text">
+                    <h1>Hương Vị<br>Đặc Biệt</h1>
+                    <p>Kết hợp hoàn hảo giữa truyền thống và hiện đại, tạo nên hương vị độc đáo khó quên</p>
+                    <button class="cta-button">Tìm Hiểu Thêm</button>
+                </div>
+                <div class="slide-image">
+                    <div class="product-showcase">
+                        <div class="product-icon">⭐</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="arrow left" onclick="changeSlide(-1)">❮</button>
+        <button class="arrow right" onclick="changeSlide(1)">❯</button>
+
+        <div class="slider-nav">
+            <div class="slider-dot active" onclick="goToSlide(0)"></div>
+            <div class="slider-dot" onclick="goToSlide(1)"></div>
+            <div class="slider-dot" onclick="goToSlide(2)"></div>
+        </div>
+    </section> -->
+
+    <!-- Banner Slider -->
+    <section class="banner-slider">
+        <!-- Slide 1 - Ảnh 1 -->
+        <div class="banner-slide active">
+            <div class="banner-content">
+                <div class="banner-media">
+                    <img src="assets/img/banner1.jpg" alt="Kẹo lá dứa 1">
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2 - Ảnh 2 -->
+        <div class="banner-slide">
+            <div class="banner-content">
+                <div class="banner-media">
+                    <img src="assets/img/banner2.jpg" alt="Kẹo lá dứa 2">
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3 - Ảnh 3 -->
+        <div class="banner-slide">
+            <div class="banner-content">
+                <div class="banner-media">
+                    <img src="assets/img/banner3.jpg" alt="Kẹo lá dứa 3">
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4 - Video -->
+        <div class="banner-slide">
+            <div class="banner-content">
+                <div class="banner-media">
+                    <!-- Thay src này bằng video thật của bạn -->
+                    <!-- <video src="https://your-video-url.mp4" autoplay muted loop></video> -->
+                    <div class="media-placeholder">
+                        🎥
+                        <span>VIDEO - Giới thiệu sản phẩm</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <button class="arrow left" onclick="changeBannerSlide(-1)">❮</button>
+        <button class="arrow right" onclick="changeBannerSlide(1)">❯</button>
+
+        <div class="slider-nav">
+            <div class="slider-dot active" onclick="goToBannerSlide(0)"></div>
+            <div class="slider-dot" onclick="goToBannerSlide(1)"></div>
+            <div class="slider-dot" onclick="goToBannerSlide(2)"></div>
+            <div class="slider-dot" onclick="goToBannerSlide(3)"></div>
+        </div>
+
+        <!-- <div class="banner-arrows">
+            <button class="banner-arrow" onclick="changeBannerSlide(-1)">❮</button>
+            <button class="banner-arrow" onclick="changeBannerSlide(1)">❯</button>
+        </div>
+
+        <div class="banner-dots">
+            <div class="banner-dot active" onclick="goToBannerSlide(0)"></div>
+            <div class="banner-dot" onclick="goToBannerSlide(1)"></div>
+            <div class="banner-dot" onclick="goToBannerSlide(2)"></div>
+            <div class="banner-dot" onclick="goToBannerSlide(3)"></div> -->
         </div>
     </section>
 
-    <section id="about" class="about fade-in">
-        <div class="about-container">
-            <h2 class="section-title">Về Chúng Tôi</h2>
-            <p class="section-description">
-                Xuất phát từ tình yêu với thiên nhiên và mong muốn mang đến những sản phẩm tốt cho sức khỏe, chúng tôi
-                đã nghiên cứu và cho ra đời dòng kẹo mềm lá dứa với hương vị độc đáo. Lá dứa không chỉ mang hương thơm
-                đặc trưng mà còn chứa nhiều dưỡng chất tốt cho sức khỏe. Kết hợp với quy trình chế biến hiện đại nhưng
-                vẫn giữ nguyên phương pháp truyền thống, chúng tôi tự hào tạo ra sản phẩm vừa ngon, vừa bổ.
+
+
+    <section class="about-section">
+        <div class="overlay"></div>
+        <div class="about-content">
+            <h3 class="about-subtitle">ABOUT US</h3>
+            <h1 class="about-title">Nhóm dự án <span>Chewpine Real</span></h1>
+            <p class="about-text">
+                Chúng tôi là nhóm sinh viên đến từ Trường đại học FPT Cần Thơ, với dự án tái sinh món kẹo truyền thống
+                lá dứa đặc trưng miền Tây.
+                Với sứ mệnh lan tỏa giá trị truyền thống Việt theo cách hiện đại, chúng tôi không ngừng sáng tạo để mang
+                đến những sản phẩm
+                “xanh – sạch – tốt cho sức khỏe” mà vẫn giữ trọn hương vị tuổi thơ.
             </p>
+            <a href="#" class="about-btn">Tìm hiểu thêm ></a>
         </div>
     </section>
 
-    <section class="stats">
-        <div class="stats-container">
-            <div class="stat-item">
-                <h3>Tiền Giang</h3>
-                <p>Nguyên liệu bản địa độc đáo</p>
-            </div>
-            <div class="stat-item">
-                <h3>Healthy concept</h3>
-                <p>Sử dụng chất ngọt tự nhiên</p>
-            </div>
-            <div class="stat-item">
-                <h3>Kết hợp </h3>
-                <p>truyền thống & hiện đại</p>
-            </div>
-            <div class="stat-item">
-                <h3>Trải nghiệm</h3>
-                <p>Storytelling & QR code</p>
-            </div>
-        </div>
-    </section>
 
-    <section id="products" class="products fade-in">
-        <div class="products-container">
-            <h2 class="section-title">Sản Phẩm Của Chúng Tôi</h2>
-            <p class="section-description" style="text-align: center;">
-                Khám phá dòng sản phẩm kẹo lá dứa đa dạng với nhiều hương vị và công thức độc đáo
-            </p>
+    <section class="product-section">
+        <div class="container">
+            <h2 class="product-title">Bộ sưu tập <span>Kẹo Lá Dứa</span></h2>
+            <p class="product-desc">Hương vị tự nhiên – Ít ngọt – Mix hạt dinh dưỡng</p>
+
             <div class="product-grid">
                 <div class="product-card">
-                    <div class="product-image">
-                        <!-- <img src="product1.jpg" alt="Sản phẩm 1"> -->
-                        <div class="product-placeholder">Ảnh sản phẩm 1</div>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Kẹo Lá Dứa Truyền Thống</h3>
-                        <p class="product-desc">Hương vị nguyên bản, giữ trọn tinh túy lá dứa tươi</p>
-                    </div>
+                    <h3 class="vertical-text">Kẹo Mềm Lá Dứa Truyền Thống</h3>
+                    <img src="img/product1.png" alt="Kẹo Mềm Lá Dứa Truyền Thống">
+                    <a href="#" class="more-btn">Tìm hiểu thêm ></a>
                 </div>
 
-                <div class="product-card">
-                    <div class="product-image">
-                        <div class="product-placeholder">Ảnh sản phẩm 2</div>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Kẹo Lá Dứa Hạt Điều</h3>
-                        <p class="product-desc">Kết hợp cùng hạt điều rang thơm bùi</p>
-                    </div>
+                <div class="product-card pink">
+                    <h3 class="vertical-text">Kẹo Mềm Lá Dứa Mix Hạt Điều</h3>
+                    <img src="img/product2.png" alt="Kẹo Mềm Lá Dứa Mix Hạt Điều">
+                    <a href="#" class="more-btn">Tìm hiểu thêm ></a>
                 </div>
 
-                <div class="product-card">
-                    <div class="product-image">
-                        <div class="product-placeholder">Ảnh sản phẩm 3</div>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Kẹo Lá Dứa Dừa</h3>
-                        <p class="product-desc">Vị ngọt thanh của dừa hòa quyện cùng lá dứa</p>
-                    </div>
+                <div class="product-card blue">
+                    <h3 class="vertical-text">Kẹo Mềm Lá Dứa Mix ....</h3>
+                    <img src="img/product3.png" alt="Kẹo Mềm Lá Dứa Mix ....">
+                    <a href="#" class="more-btn">Tìm hiểu thêm ></a>
+                </div>
+
+                <div class="product-card yellow">
+                    <h3 class="vertical-text">Kẹo Mềm Lá Dứa Mix ....</h3>
+                    <img src="img/product4.png" alt="Kẹo Mềm Lá Dứa Mix ....">
+                    <a href="#" class="more-btn">Tìm hiểu thêm ></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="process" class="process fade-in">
-        <div class="process-container">
-            <h2 class="section-title">Quy Trình Sản Xuất</h2>
-            <p class="section-description" style="text-align: center;">
-                6 bước chế biến khép kín đảm bảo chất lượng sản phẩm tốt nhất
-            </p>
-            <div class="process-grid">
-                <div class="process-item">
-                    <div class="process-number">1</div>
-                    <h3>Chọn lá dứa</h3>
-                    <p>Lựa chọn những lá dứa tươi ngon nhất từ vườn trồng hữu cơ</p>
-                </div>
 
-                <div class="process-item">
-                    <div class="process-number">2</div>
-                    <h3>Rửa sạch</h3>
-                    <p>Rửa kỹ và xử lý sơ chế theo quy trình vệ sinh nghiêm ngặt</p>
+    <section class="culture-section">
+        <div class="culture-container">
+            <div class="culture-text">
+                <h4 class="culture-subtitle">PLUM CULTURE</h4>
+                <h2 class="culture-title">Câu chuyện văn hoá<br><span>Lá Dứa Việt Nam</span></h2>
+                <div class="culture-logo">
+                    <img style="width: 60px; height: auto;" src="assets/img/logo-removebg.png" alt="Logo" class="logo">
+                    <!-- <span class="divider">×</span>
+                    <img src="img/logo-partner.png" alt="Logo đối tác" class="partner-logo"> -->
                 </div>
+                <p class="culture-desc">
+                    Từ lá dứa thơm dịu trong những khu vườn quê Việt, chúng tôi mang đến câu chuyện về sự kết hợp giữa
+                    truyền thống và hiện đại. Mỗi chiếc kẹo lá dứa không chỉ là món ăn vặt, mà còn là biểu tượng của
+                    ký ức, của tình yêu quê hương qua từng hương vị ngọt ngào tự nhiên.
+                </p>
+                <a href="#" class="culture-btn">Tìm hiểu thêm ></a>
+            </div>
 
-                <div class="process-item">
-                    <div class="process-number">3</div>
-                    <h3>Chiết xuất</h3>
-                    <p>Ép lấy nước và chiết xuất tinh chất từ lá dứa tươi</p>
-                </div>
-
-                <div class="process-item">
-                    <div class="process-number">4</div>
-                    <h3>Pha chế</h3>
-                    <p>Kết hợp với đường mía và các nguyên liệu tự nhiên</p>
-                </div>
-
-                <div class="process-item">
-                    <div class="process-number">5</div>
-                    <h3>Nấu và định hình</h3>
-                    <p>Nấu ở nhiệt độ phù hợp và đổ khuôn tạo hình</p>
-                </div>
-
-                <div class="process-item">
-                    <div class="process-number">6</div>
-                    <h3>Đóng gói</h3>
-                    <p>Đóng gói cẩn thận và kiểm tra chất lượng</p>
+            <div class="culture-video">
+                <div class="video-frame">
+                    <img src="assets/img/aboutus.jpg" alt="Video Văn hoá Lá Dứa">
+                    <div class="play-btn" onclick="openVideoPopup()"><i style="margin-left: 6px;" class="fa-solid fa-play"></i></div>
                 </div>
             </div>
         </div>
+
+        <!-- <img style="width: 40px; height: auto;" src="assets/img/logo-removebg.png" class="bottom-decor" alt="Trang trí quả lá dứa"> -->
     </section>
 
-    <section class="gallery fade-in">
-        <div class="gallery-container">
-            <h2 class="section-title">Thư Viện Hình Ảnh</h2>
-            <p class="section-description" style="text-align: center;">
-                Những hình ảnh về sản phẩm và quy trình sản xuất của chúng tôi
-            </p>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <!-- <img src="gallery1.jpg" alt="Gallery 1"> -->
-                    <div class="gallery-placeholder">Ảnh 1</div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">Ảnh 2</div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">Ảnh 3</div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">Ảnh 4</div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">Ảnh 5</div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">Ảnh 6</div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">Ảnh 7</div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">Ảnh 8</div>
-                </div>
-            </div>
+    <!-- Popup Video -->
+    <div id="videoPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeVideoPopup()">&times;</span>
+            <iframe id="videoFrame" src="" frameborder="0" allowfullscreen></iframe>
         </div>
-    </section>
+    </div>
 
-    <section class="video-section fade-in">
-        <div class="video-container">
-            <h2 class="section-title" style="text-align: center; margin-bottom: 40px;">Video Giới Thiệu</h2>
-            <div class="video-wrapper">
-                <!-- <div class="video-placeholder">
-                    <div class="play-button">▶</div>
-                    <p style="font-size: 18px;">Xem video câu chuyện của chúng tôi</p>
-                </div> -->
-                <iframe src="https://www.youtube.com/embed/r34IHFI-29c" frameborder="0" allowfullscreen
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                </iframe>
-            </div>
-        </div>
-    </section>
+    <script>
+        function openVideoPopup() {
+            const popup = document.getElementById("videoPopup");
+            const frame = document.getElementById("videoFrame");
+            frame.src = "https://www.youtube.com/embed/r34IHFI-29c";
+            popup.style.display = "flex";
+        }
 
-    <section id="contact" class="contact fade-in">
-        <div class="contact-container">
-            <h2 class="section-title">Liên Hệ Với Chúng Tôi</h2>
-            <p class="section-description">
-                Hãy liên hệ với chúng tôi để biết thêm thông tin hoặc đặt hàng
-            </p>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <h4>📞 Điện thoại</h4>
-                    <p>076 392 3603</p>
-                </div>
-                <div class="contact-item">
-                    <h4>✉️ Email</h4>
-                    <p>chewpinereal@gmail.com</p>
-                </div>
-                <div class="contact-item">
-                    <h4>📍 Địa chỉ</h4>
-                    <p>600 NVC nối dài, P. An Bình<br>Cần Thơ, Việt Nam</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        function closeVideoPopup() {
+            const popup = document.getElementById("videoPopup");
+            const frame = document.getElementById("videoFrame");
+            frame.src = ""; // tắt video khi đóng
+            popup.style.display = "none";
+        }
+    </script>
 
     <footer>
         <div class="footer-container">
             <div class="footer-about">
-                <h3>🌿 Chewpine Real</h3>
+                <div class="footer-logo">
+                    <img src="assets/img/logo-removebg.png" alt="Chewpine Logo">
+                    <h3>Chewpine Real</h3>
+                </div>
                 <p>Dự án tái sinh món kẹo truyền thống, một món kẹo có hương lá dứa đặc trưng miền Tây.</p>
             </div>
 
@@ -303,7 +348,9 @@
         </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
+
+
+    <script src="assets/js/home.js"></script>
     <script>
 
     </script>
